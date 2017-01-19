@@ -1,0 +1,154 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+/*以上reset.css*/
+
+
+
+
+/*字體*/
+body{
+	font-family: 微軟正黑體;
+}
+/*最外層的DIV*/
+.wrap{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/*header*/
+.header{
+	height: 80px;
+	background-color:#fff;
+}
+
+/*logo*/
+.logo h1 a{
+  float: left;
+  width: 200px;
+  height: 80px;
+  display: block;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration:none;
+  color: #5A5AAD;
+  text-align: center;
+  line-height:80px;
+}
+
+
+/*header超連結選單*/
+.header ul{
+  float:right;
+
+}
+.header li{
+  float: left;
+}
+.header li a{
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  font-weight:bold;
+  text-decoration:none;
+  color: #5A5AAD;
+  line-height:80px;
+  height: 80px;
+  width: 120px;
+  text-align: center;
+}
+.header li a:hover{
+  transition-duration: 0.3s;
+  background-color: #E6E6F2;
+
+}
+
+
+/*RWD漢堡選單*/
+.hamburger{
+  display:none;
+  color:#5A5AAD;
+  font-size: 30px;
+  text-decoration:none;
+  line-height:80px;
+  width: 80px;
+  text-align: center;
+}
+.hamburger:focus{
+  transition-duration: 0.3s;
+  background-color: #E6E6F2;
+  color:#fff;
+}
+/*768px時變手機版型*/
+@media(max-width: 768px){
+  .hamburger{
+  display:block;
+  float:right;
+  }
+  .header ul,.header li{
+  float: none;
+  margin: 0px;
+  }
+  .header li a{
+  text-align: center;
+  width: 100%;
+  }
+  .menu{
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.7s;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  }
+  .show-menu{
+  max-height: 240px;
+  background-color:#fff;
+  }
+}

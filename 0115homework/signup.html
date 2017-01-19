@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>首頁</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/signup.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/all.js"></script>
+  <script src="https://use.fontawesome.com/013fa7e5a6.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="logo">
+        <h1>
+          <a href="index.html">過氣的潮牌</a>
+        </h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="404.html">購物專區</a></li> 
+          <li><a href="longin.html">會員登入</a></li> 
+          <li><a href="signup.html">註冊會員</a></li> 
+        </ul>
+      </div>
+      <a href="#" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="content">
+
+      <div class="longinbox">
+        <h2>加入會員</h2>
+
+        <form action="signup.html" method="post">
+        <fieldset>
+          
+        <label for="email">電子信箱</label><br>
+        <input id="email" class="from-style" name="email" type="email" placeholder="請輸入電子信箱"><br>
+
+        <label for="password">密碼</label><br>
+        <input id="password" class="from-style" name="password" type="text" placeholder="請輸入密碼"><br>
+
+        <label for="password-again">密碼確認</label><br>
+        <input id="password-again" class="from-style" name="password-again" type="password" placeholder="請再次輸入密碼"><br>
+
+        <label for="tel">聯絡電話</label><br>
+        <input id="tel" class="from-style" name="tel" type="tel" placeholder="電話或手機皆可"><br>    
+
+        <label for="selectbasic">國家或地區</label><br>
+          <select id="selectbasic" class="from-style" name="selectbasic">
+              <option value="Taiwan">台灣</option>
+              <option value="Japan">日本</option>
+              <option value="China">中國</option>
+              <option value="USA">美國</option>
+              <option value="France">法國</option>
+              <option value="Germany">德國</option>
+              <option value="England">英國</option>
+            </select><br>
+
+        <label for="radios">性別</label><br>
+            <label for="radios-0">
+              <input type="radio" name="radios" id="radios-0" value="MAN" checked="checked">
+              男
+            </label> 
+            <label for="radios-1">
+              <input type="radio" name="radios" id="radios-1" value="WOMAN">
+              女
+            </label> 
+            <label for="radios-2">
+              <input type="radio" name="radios" id="radios-2" value="OTHER">
+              其他
+            </label>
+        <div class="my-btn">
+        <input type="submit" value="提交">  
+        <input type="reset" value="重新填寫">
+        <div>
+
+        </form>
+
+        </fieldset>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</body>
